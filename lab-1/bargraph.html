@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar-Graph</title>
+
+    <style>
+
+        p{
+            margin-left: 30px;
+        }
+
+        #box{
+            background-color: whitesmoke;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+        #box article{
+         display: inline-block;
+         padding: 5px;
+        }
+        
+        div{
+            background-color: grey;
+            width: 50px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+       #bg1{ 
+            width: 40px;
+            height: 70%;
+            background-color: white;
+            animation-name: bg1p;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+       }
+       @keyframes bg1p{
+        0%{height: 100%;background-color: white;}
+        100%{height: 70;}
+       }
+        
+       #bg2{ 
+            width: 40px;
+            height: 60%;
+            background-color: white;
+            animation-name: bg2p;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+       }
+       @keyframes bg2p{
+        0%{height: 100%;background-color: white;}
+        100%{height: 60;}
+       }
+
+       #bg3{ 
+            width: 40px;
+            height: 20%;
+            background-color: white;
+            animation-name: bg3p;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+       }
+       @keyframes bg3p{
+        0%{height: 100%;background-color: white;}
+        100%{height: 20;}
+       }
+    
+
+    </style>
+
+</head>
+<body>
+    <section id="box">
+    <article >
+        <div>
+            <article id="bg1"></article>
+        </div>
+            <p>
+              30%
+            </p>
+        </article>
+    <article >
+            <div>
+                <article id="bg2"></article>
+            </div>
+                <p>
+                  40%
+                </p>
+        </article>
+        <article >
+            <div>
+                <article id="bg3"></article>
+            </div>
+                <p>
+                  80%
+                </p>
+            </article>
+            <h1 style="text-align: center; font-size: xx-large;"><b>Bar Plot</b></h2>
+    </section>
+ 
+</body>
+</html>
